@@ -1,0 +1,403 @@
+/* 
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ 
+
+.container {
+   
+    width: 100%;
+    height: 100%;
+    --s: 105px; 
+    --c1: #ffee8d;
+    --c2: #3cff00;
+    --c3: #fafafa;
+  
+    background: conic-gradient(
+          from 75deg,
+          var(--c1) 15deg,
+          var(--c2) 0 30deg,
+          #0000 0 180deg,
+          var(--c2) 0 195deg,
+          var(--c1) 0 210deg,
+          #0000 0
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) / 0.577),
+      conic-gradient(
+        var(--c1) 30deg,
+        var(--c3) 0 75deg,
+        var(--c1) 0 90deg,
+        var(--c2) 0 105deg,
+        var(--c3) 0 150deg,
+        var(--c2) 0 180deg,
+        var(--c3) 0 210deg,
+        var(--c1) 0 256deg,
+        var(--c2) 0 270deg,
+        var(--c1) 0 286deg,
+        var(--c2) 0 331deg,
+        var(--c3) 0
+      );
+    background-size: var(--s) calc(var(--s) / 0.577);
+  }
+
+
+@media (max-width: 768px) {
+    .container {
+        height: 100%;
+      
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .container {
+
+        height: 100%;
+      --s: 60px; /
+    }
+  }
+  
+
+  
+
+
+
+   .logo {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    text-align: center;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+.cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #3d3939, #7fff08);
+    color: ghostwhite;
+    overflow: hidden;
+  }
+  
+  .cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+  }
+  
+  .cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+  }
+  
+  .cssbuttons-io::before,
+  .cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .cssbuttons-io::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+  
+  .cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  .cssbuttons-io:active {
+    transform: scale(0.95);
+  }
+  
+
+
+
+.base-line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.base-line .one{
+    width: 50%;
+    height: 1.5px;
+    background: #000000;
+    margin-bottom: 140px;
+} 
+
+.hero{
+    margin-left: 50px;
+}
+
+.side1 p{ 
+    font-weight: 500;
+} 
+
+
+@media (max-width: 768px) {
+    .logo {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+    .cssbuttons-io {
+      font-size: 14px;
+      padding: 8px 15px;
+  
+  }
+}
+  @media (max-width: 480px) {
+    .logo {
+      padding: 5px 10px;
+      font-size: 0.8em;
+    }
+    .cssbuttons-io {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+    
+  }
+
+@media (max-width: 768px) {
+    .base-line {
+      width: 50%; 
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .base-line {
+      width: 30%;  
+      align-items: center;
+
+    }
+  } */
+
+
+
+
+
+  /* General Reset */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Container Background */
+.container {
+  width: 100%;
+  height: 100%;
+  --s: 105px; 
+  --c1: #dca7ff;
+  --c2: #00ffd5;
+  --c3: #fafafa;
+
+  background: conic-gradient(
+        from 75deg,
+        var(--c1) 15deg,
+        var(--c2) 0 30deg,
+        #0000 0 180deg,
+        var(--c2) 0 195deg,
+        var(--c1) 0 210deg,
+        #0000 0
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) / 0.577),
+    conic-gradient(
+      var(--c1) 30deg,
+      var(--c3) 0 75deg,
+      var(--c1) 0 90deg,
+      var(--c2) 0 105deg,
+      var(--c3) 0 150deg,
+      var(--c2) 0 180deg,
+      var(--c3) 0 210deg,
+      var(--c1) 0 256deg,
+      var(--c2) 0 270deg,
+      var(--c1) 0 286deg,
+      var(--c2) 0 331deg,
+      var(--c3) 0
+    );
+  background-size: var(--s) calc(var(--s) / 0.577);
+}
+
+
+.side1{
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+      --s: 85px;
+      background-size: var(--s) calc(var(--s) / 0.577);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      --s: 60px;
+      background-size: var(--s) calc(var(--s) / 0.577);
+  }
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Responsive Logo */
+@media (max-width: 768px) {
+  .logo {
+      padding: 10px;
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+      padding: 5px;
+      font-size: 1rem;
+  }
+}
+
+/* Button */
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #3d3939, #38c0ff);
+  color: ghostwhite;
+  overflow: hidden;
+}
+
+.cssbuttons-io svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+
+/* Responsive Button */
+@media (max-width: 768px) {
+  .cssbuttons-io {
+      font-size: 14px;
+      padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cssbuttons-io {
+      font-size: 12px;
+      padding: 6px 10px;
+  }
+}
+
+/* Base Line */
+.base-line {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.base-line .one {
+  width: 50%;
+  height: 1.5px;
+  background: #000000;
+  margin-bottom: 140px;
+}
+
+/* Responsive Base Line */
+@media (max-width: 768px) {
+  .base-line .one {
+      width: 70%;
+      margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .base-line .one {
+      width: 50%;
+      margin-bottom: 80px;
+  }
+}
